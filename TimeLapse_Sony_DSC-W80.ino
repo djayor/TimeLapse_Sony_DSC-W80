@@ -25,20 +25,20 @@ void loop() {
 
   switch (ptime) {
     case 1:
-      seconds = 3000; // 3 seconds till next photo
-      Serial.println("Time Lapse with 3 seconds! ");
-      break;
-    case 2:
       seconds = 5000; // 5 seconds till next photo
       Serial.println("Time Lapse with 5 seconds! ");
       break;
+    case 2:
+      seconds = 8000; // 8 seconds till next photo
+      Serial.println("Time Lapse with 8 seconds! ");
+      break;
     case 3:
-      seconds = 10000; // 10 seconds till next photo
-      Serial.println("Time Lapse with 10 seconds! ");
+      seconds = 12000; // 12 seconds till next photo
+      Serial.println("Time Lapse with 12 seconds! ");
       break;
     case 4:
-      seconds = 30000; // 30 seconds till next photo
-      Serial.println("Time Lapse with 30 seconds! ");
+      seconds = 15000; // 15 seconds till next photo
+      Serial.println("Time Lapse with 15 seconds! ");
       break;
     default:
       //or case 0 = turn off the servo
@@ -50,7 +50,7 @@ void loop() {
 
 
   if(ptime > 0){
-    myservo.write(100); // servo shoot position - You can calibrate this value
-    delay(1000); // 1 secound to have sure that is in focus
+    myservo.write(95); // servo shoot position - You can calibrate this value
+    delay(500); // 1 secound to have sure that is in focus
   }
 }
