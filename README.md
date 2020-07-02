@@ -7,3 +7,4 @@ https://www.thingiverse.com/thing:4498410
 Hardware need it:
 - Any Arduino;
 - Micro Servo 9G;
+- Potentiometer
